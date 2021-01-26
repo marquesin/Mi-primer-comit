@@ -3,7 +3,7 @@
   font-family: "IBM Plex Mono", "IBM Plex Sans";
   box-sizing: border-box;
   /*BORDE SOLO PARA VER LAS CAJAS*/
-  border: solid;
+  /*border: solid;*/
   margin: 0;
   padding: 0;
   font-family:'IBM Plex Mono', monospace ;
@@ -74,14 +74,32 @@ li{
   height: 36px;
 }
 /*movil*/
-.icon-menu{
-  margin-left: 75%;
-  margin-top: 25%;
+#menu-mobile, .icon-menu, .icon-sup{
+  margin-left: 85%;
 }
 .icon-sup{
-  display: table-row;
-  height: 14px;
-  width: 14px;
+  height: 2rem;
+    width: 2rem;
+    padding: 0.1rem 0px 0px 0.1rem;
+    cursor: pointer;
+    position: relative;
+}
+.linea{
+  height: 10%;
+  width: 75%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.linea-top{
+  top: 25%;
+}
+.linea-low{
+  top: 75%;
 }
 .menu-list-mobile{
   width: 100%;
@@ -434,7 +452,7 @@ i{
     max-width: 400px;
   }
   body{
-    width: 400px;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -466,49 +484,28 @@ i{
     position: absolute;
     margin-top: 0%;
   }
-  /*prueba ara*/
-  .menu {
-    background-color: transparent;
-    border: none;
+  .icon-sup{
+    height: 2rem;
+    width: 2rem;
+    padding: 0.1rem 0px 0px 0.1rem;
     cursor: pointer;
-    display: flex;
-    padding: 0;
+    position: relative;
   }
-  .line {
-    fill: none;
-    stroke: black;
-    stroke-width: 6;
-    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  input:checked + .icon-menu .icon-sup .linea-top{
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: black;
   }
-  .line1 {
-    stroke-dasharray: 60 207;
-    stroke-width: 6;
+  input:checked + .icon-menu .icon-sup .linea-med{
+    opacity: 0;
   }
-  .line2 {
-    stroke-dasharray: 60 60;
-    stroke-width: 6;
+  input:checked + .icon-menu .icon-sup .linea-low{
+  top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background-color: black;
   }
-  .line3 {
-    stroke-dasharray: 60 207;
-    stroke-width: 6;
-  }
-  .opened .line1 {
-    stroke-dasharray: 90 207;
-    stroke-dashoffset: -134;
-    stroke-width: 6;
-  }
-  .opened .line2 {
-    stroke-dasharray: 1 60;
-    stroke-dashoffset: -30;
-    stroke-width: 6;
-  }
-  .opened .line3 {
-    stroke-dasharray: 90 207;
-    stroke-dashoffset: -134;
-    stroke-width: 6;
-  }
-  /*prueba ara*/
+ 
   .contit{
     padding-top: 15%;
   }
