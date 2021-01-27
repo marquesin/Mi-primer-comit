@@ -14,6 +14,7 @@ font-family: 'IBM Plex Sans', sans-serif;*/
   display: block;
   list-style: none;
   text-decoration: none;
+  overflow-x: unset;
   /*style="text-decoration:line-through;"*/
   /*overflow: auto;*/
 }
@@ -42,7 +43,9 @@ justify-content: flex-end;
 }
 .dm{
  margin: 0px 24px 26px 24px;
+ color: black;
 }
+
 li{
   list-style: none;
 }
@@ -85,8 +88,10 @@ li{
     position: relative;
 }
 .linea{
-  height: 10%;
-  width: 75%;
+  /*height: 10%;
+  width: 75%;*/
+  width: 18px;
+  height: 2px;
   background-color: rgb(0, 0, 0);
   border-radius: 10px;
   transition: all 0.2s ease;
@@ -403,7 +408,7 @@ h3{
   height: 95px;
   width: 100%;
 }
-.icfi>p{
+.icfi>span{
   height: 28px ;
   width: 269px;
   display: flex;
@@ -435,12 +440,15 @@ h3{
   justify-content: flex-end;
   align-content: flex-end;
   margin-left: 50%;
-  padding-left: 15%;
+  padding-left: 20%;
+  margin-top: 3%;
 }
 
 i{
   align-self: center;
   margin-right: 55px;
+  color: black;
+  padding-top: 15%;
 }
 
 /*Medias quiers*/
@@ -449,7 +457,7 @@ i{
 
 @media screen and (max-width: 450px) {
   *{
-    max-width: 400px;
+    max-width: 100%;
   }
   body{
     width: 100%;
@@ -457,20 +465,21 @@ i{
     flex-direction: column;
   }
   .contenedor{
-    max-width: 400px;
+    max-width: 449px;
+    overflow-x: unset;
   }
   .desktop-menu{
     display: none;
   }
   .menusup-mobile{
     display: block;
-    margin-top: 3%;
+    height: 44px;
   }
   input{
     display: none;
   }
   .menu-list-mobile{
-    position: fixed;
+    position: absolute;
   }
   input:checked ~ .menu-list-mobile {
     display: block;
@@ -479,14 +488,14 @@ i{
     display: none;
   }
   .logo{
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    margin-top: 0%;
+    margin-top: 5%;
   }
   .icon-sup{
-    height: 2rem;
-    width: 2rem;
+    height: 1.7rem;
+    width: 1.7rem;
     padding: 0.1rem 0px 0px 0.1rem;
     cursor: pointer;
     position: relative;
@@ -537,7 +546,7 @@ i{
   }
   .epi{
     font-size: 2em;
-    padding: 25% 10% 10% 40%;
+    padding: 25% 10% 10% 25%;
   }
   iframe{
     width: 298px;
@@ -564,7 +573,7 @@ i{
     clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
   }
   .phone{
-    top: 1740px;
+    top: 1600px;
     width: 360px;
     height: 520px;
   }
@@ -593,6 +602,7 @@ i{
   .fondgradfi{
     clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%);
     height: 341px;
+    width: 100%;
   }
   .cfongrad {
     height: 350px;
@@ -632,3 +642,72 @@ i{
   }
 }
 
+@media screen and (min-width: 450px) and (max-width: 800px){
+  *{
+    max-width: 800px;
+  }
+  body{
+    width: 100%;
+  }
+  .contenedor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .dm{
+    margin: 1em 1em 1em 1em;
+  }
+  .tit{
+    font-size: 2.7em;
+  }
+  .fondgradc{
+    margin-top: 2em;
+    width: 100%;
+    height: 900px;
+  }
+  .fondgrad{
+    width: 100%;
+    height: 900px;
+  }
+  .depi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+  }
+  iframe{
+    width: 298px;
+    box-sizing: content-box;
+    margin: 0;
+  }
+  .fila1, .fila2{
+    margin-top: 5%;
+  }
+  .podca1, .podca3{
+    margin-right: 5%;
+  }
+  .phone{
+    width: 50%;
+  }
+  .li1, .li2{
+    flex-direction: column;
+  }
+  .img1, .img2, .img3, .img4, .img5, .img6{
+    width: 100%;
+    height: 500px;
+  }
+  .fondgradfi{
+    clip-path: polygon(0 28%, 100% 3%, 100% 100%, 0 100%);
+  }
+  .titgrad{
+    margin: 10% 20% 10% 0%;
+  }
+  .bugrad{
+    margin-left: 30%;
+    margin-top: 0;
+  }
+  .ico{
+    margin-top: 10%;
+    width: 50%;
+  }
+}
