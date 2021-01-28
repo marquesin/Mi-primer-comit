@@ -29,12 +29,9 @@ font-family: 'IBM Plex Sans', sans-serif;*/
   letter-spacing: 0;
   line-height: 28px;
 }
-.navtop ul li{
-display: inline;
-justify-content: flex-end;
-}
-.navtop{
+.unav{
   display: flex;
+
 }
 .logo{
   width: 36px;
@@ -127,25 +124,26 @@ li{
 padding-top: 5%;
 padding-right: 15%;
 }
+.titulosup{
+ display: flex;
+ justify-content: center;
+}
 .tit {
   font-family:'IBM Plex Sans', sans-serif ;
   font-weight: 400;
   font-size: 64px;
   color: #060a24;
   letter-spacing: 0;
-  display: flex;
-  flex-wrap: nowrap;
-  padding-left: 15%; 
-  padding-top: 5%;
+  padding-right: 2.5%;
 }
 .world{
   text-decoration:line-through;
-  margin-left: 1%;
-  margin-right: 1%;
+  padding-left: 5%;
 }
-.punto{
-  display: flex;
+.punto{font-family: IBMPlexSans;
+  font-size: 64px;
   color: #0000EC;
+  letter-spacing: 0;
 }
 
 .dparrafito {
@@ -519,10 +517,14 @@ i{
   .contit{
     padding-top: 15%;
   }
+  .titulosup{
+    display: block;
+    padding-left: 15%;
+  }
   .tit{
     font-size: 2em;
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    margin-top: 0;
   }
   .dparrafito{
     width: 228px;
@@ -534,7 +536,7 @@ i{
   .button{
     width: 288px;
     height: 48px;
-    margin-top: 50%;
+    margin-top: 45%;
   }
   .dbutton{
     display: flex;
@@ -612,7 +614,6 @@ i{
     font-size: 36px;
     display: block;
     text-align: center;
-    margin-left: 15%;
   }
   .bugrad{
     width: 288px;
@@ -642,6 +643,10 @@ i{
     margin: 0;
     padding: 0;
   }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 @media screen and (min-width: 450px) and (max-width: 800px){
@@ -658,6 +663,9 @@ i{
   }
   .dm{
     margin: 1em 1em 1em 1em;
+  }
+  .titulosup{
+    align-items: baseline;
   }
   .tit{
     font-size: 2.7em;
@@ -676,6 +684,7 @@ i{
     flex-direction: column;
     justify-content: center;
     margin-left: 10%;
+    margin-bottom: 10%;
   }
   iframe{
     width: 298px;
