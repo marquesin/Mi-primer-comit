@@ -474,6 +474,7 @@ i{
   }
   .menu-list-mobile{
     position: absolute;
+    margin-top: 5%;
   }
   input:checked ~ .menu-list-mobile {
     display: block;
@@ -720,6 +721,5 @@ i{
   }
   .ico{
     margin-top: 10%;
-    width: 50%;
   }
 }
