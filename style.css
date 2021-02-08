@@ -521,10 +521,12 @@ i{
     font-size: 2em;
     display: block;
     margin-top: 0;
+    line-height: 42px;
   }
   .dparrafito{
-    width: 228px;
+    /*width: 228px;*/
     height: 66px;
+    margin-top: 5%;
   }
   .parrafito{
     font-size: 14px;
@@ -532,7 +534,7 @@ i{
   .button{
     width: 288px;
     height: 48px;
-    margin-top: 45%;
+    margin-top: 35%;
   }
   .dbutton{
     display: flex;
