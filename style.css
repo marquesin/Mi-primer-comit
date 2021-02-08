@@ -1,9 +1,6 @@
 /*ESTILOS GENERALES*/
 * {
-  font-family: "IBM Plex Mono", "IBM Plex Sans";
   box-sizing: border-box;
-  /*BORDE SOLO PARA VER LAS CAJAS*/
-  /*border: solid;*/
   margin: 0;
   padding: 0;
   font-family:'IBM Plex Mono', monospace ;
@@ -15,8 +12,6 @@ font-family: 'IBM Plex Sans', sans-serif;*/
   list-style: none;
   text-decoration: none;
   overflow-x: unset;
-  /*style="text-decoration:line-through;"*/
-  /*overflow: auto;*/
 }
 .desktop-menu{
   display: flex;
@@ -86,8 +81,6 @@ li{
     position: relative;
 }
 .linea{
-  /*height: 10%;
-  width: 75%;*/
   width: 18px;
   height: 2px;
   background-color: rgb(0, 0, 0);
@@ -444,10 +437,7 @@ h3{
 i{
   color: black;
 }
-
 /*Medias quiers*/
-
-
 
 @media screen and (max-width: 450px) {
   *{
